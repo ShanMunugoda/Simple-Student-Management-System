@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #F2F1EF;" styleClass="mainFxmlClass" stylesheets="@../../../../../../Company/src/lk/ijse/comp/view/styles/main.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.comp.controller.MainController">
+   <children>
+      <VBox layoutX="194.0" layoutY="66.0" prefHeight="22.0" prefWidth="156.0" />
+      <FlowPane layoutY="-3.0" prefHeight="84.0" prefWidth="1038.0" style="-fx-background-color: #ECF0F1;">
+         <children>
+            <Label prefHeight="45.0" prefWidth="149.0" text="IJSE" textFill="#cf000f">
+               <font>
+                  <Font name="Arial Bold" size="51.0" />
+               </font>
+               <padding>
+                  <Insets left="20.0" top="15.0" />
+               </padding>
+               <FlowPane.margin>
+                  <Insets top="6.0" />
+               </FlowPane.margin>
+            </Label>
+         </children>
+      </FlowPane>
+      <Pane layoutX="1.0" layoutY="132.0" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" prefHeight="415.0" prefWidth="1038.0" style="-fx-background-color: #EEEEEE;">
+         <children>
+            <ImageView fx:id="imgStudent" fitHeight="150.0" fitWidth="200.0" layoutX="79.0" layoutY="58.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resource/icons8_User_Group_96px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="431.0" layoutY="119.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resource/icons8_Windows8_96px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="819.0" layoutY="208.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resource/icons8_Workstation_96px.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Label fx:id="lblMenu" alignment="CENTER" layoutX="197.0" layoutY="77.0" opacity="0.82" prefHeight="67.0" prefWidth="656.0" text="Welcome">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDescription" alignment="CENTER" layoutX="150.0" layoutY="540.0" prefHeight="46.0" prefWidth="738.0" text="Please select one of above main operations to proceed" />
+      <FlowPane layoutY="81.0" prefHeight="4.0" prefWidth="1038.0" style="-fx-background-color: red;" />
+   </children>
+</AnchorPane>
